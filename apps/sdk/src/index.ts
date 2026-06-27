@@ -15,7 +15,7 @@ function toQueryString(obj: Record<string, any>): string {
 export default class Postiz {
   constructor(
     private _apiKey: string,
-    private _path = 'https://api.postiz.com'
+    private _path = 'http://2.24.28.238:3000'
   ) {}
 
   async post(posts: CreatePostDto) {
