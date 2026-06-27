@@ -1,5 +1,5 @@
 import React from 'react';
 
 export const LogoTextComponent = () => {
-  return <img src="/logo-text.png" />;
+  return <img src="/logo-text.png" className="w-20" />;
 };
