@@ -19,6 +19,6 @@ jobs:
           script: |
             cd ~/Nytfire-Publish
             git pull origin main
-            docker compose pull
-            docker compose up -d --force-recreate
+            docker compose down
+            docker compose up -d --build    # --build rebuilds from your code
             docker image prune -f
