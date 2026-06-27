@@ -1,17 +1,19 @@
 services:
   postiz:
-    image: ghcr.io/gitroomhq/postiz-app:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
     container_name: postiz
     restart: always
     environment:
       # === Required Settings
-      MAIN_URL: 'http://localhost:4007'
-      FRONTEND_URL: 'http://localhost:4007'
-      NEXT_PUBLIC_BACKEND_URL: 'http://localhost:4007/api'
+      MAIN_URL: 'http://2.24.28.238:4007'
+      FRONTEND_URL: 'http://2.24.28.238:4007'
+      NEXT_PUBLIC_BACKEND_URL: 'http://2.24.28.238:4007/api'
       JWT_SECRET: 'hgdvdhqdqkmjvcagevvdty3fdjgvdgwevfjhegvgqwvfghdvcdgcvnsdvchjgfjgr'
-      DATABASE_URL: 'postgresql://postizuser:postizpassword@postiz-postgres:5432/postizdb'
+      DATABASE_URL: 'postgresql://postiz-user:postiz-password@postiz-postgres:5432/postiz-db'
       REDIS_URL: 'redis://postiz-redis:6379'
-      BACKEND_INTERNAL_URL: 'http://localhost:3000'
+      BACKEND_INTERNAL_URL: 'http://2.24.28.238:3000'
       TEMPORAL_ADDRESS: "temporal:7233"
       IS_GENERAL: 'true'
       DISABLE_REGISTRATION: 'false'
