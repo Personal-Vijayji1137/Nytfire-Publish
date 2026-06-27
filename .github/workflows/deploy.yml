@@ -20,5 +20,5 @@ jobs:
             cd ~/Nytfire-Publish
             git pull origin main
             docker compose down
-            docker compose up -d --build    # --build rebuilds from your code
+            docker compose up -d --build
             docker image prune -f
