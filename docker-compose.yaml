@@ -13,7 +13,7 @@ services:
       JWT_SECRET: 'hgdvdhqdqkmjvcagevvdty3fdjgvdgwevfjhegvgqwvfghdvcdgcvnsdvchjgfjgr'
       DATABASE_URL: 'postgresql://postiz-user:postiz-password@postiz-postgres:5432/postiz-db'
       REDIS_URL: 'redis://postiz-redis:6379'
-      BACKEND_INTERNAL_URL: 'http://2.24.28.238:3000'
+      BACKEND_INTERNAL_URL: 'http://postiz:5000'
       TEMPORAL_ADDRESS: "temporal:7233"
       IS_GENERAL: 'true'
       DISABLE_REGISTRATION: 'false'
@@ -132,13 +132,13 @@ services:
     environment:
       POSTGRES_PASSWORD: postiz-password
       POSTGRES_USER: postiz-user
-      POSTGRES_DB: postiz-db-local
+      POSTGRES_DB: postiz-db
     volumes:
       - postgres-volume:/var/lib/postgresql/data
     networks:
       - postiz-network
     healthcheck:
-      test: pg_isready -U postiz-user -d postiz-db-local
+      test: pg_isready -U postiz-user -d postiz-db
       interval: 10s
       timeout: 3s
       retries: 3
