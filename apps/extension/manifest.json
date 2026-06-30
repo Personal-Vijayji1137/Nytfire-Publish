@@ -23,7 +23,7 @@
     "matches": [
       "http://localhost/*",
       "https://localhost/*",
-      "https://*.2.24.28.238/*"
+      "https://www.nytfirepublish.com/*"
     ]
   }
 }

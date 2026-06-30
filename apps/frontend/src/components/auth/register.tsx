@@ -219,7 +219,7 @@ export function RegisterAfter({
                 )}
                 &nbsp;
                 <a
-                  href={`http://2.24.28.238:4007/terms`}
+                  href={`https://www.nytfirepublish.com/terms`}
                   className="underline hover:font-bold"
                   rel="nofollow"
                 >
@@ -228,7 +228,7 @@ export function RegisterAfter({
                 &nbsp;
                 {t('and', 'and')}&nbsp;
                 <a
-                  href={`http://2.24.28.238:4007/privacy`}
+                  href={`https://www.nytfirepublish.com/privacy`}
                   rel="nofollow"
                   className="underline hover:font-bold"
                 >

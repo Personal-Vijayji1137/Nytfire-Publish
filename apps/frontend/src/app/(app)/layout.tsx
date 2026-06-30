@@ -44,7 +44,7 @@ export default async function AppLayout({ children }: { children: ReactNode }) {
         {!!process.env.DATAFAST_WEBSITE_ID && (
           <Script
             data-website-id={process.env.DATAFAST_WEBSITE_ID}
-            data-domain="2.24.28.238:4007"
+            data-domain="nytfirepublish.com"
             src="https://datafa.st/js/script.js"
             strategy="afterInteractive"
           />
@@ -102,7 +102,7 @@ export default async function AppLayout({ children }: { children: ReactNode }) {
             <FacebookComponent />
             <GoogleTagManagerComponent gtmId={process.env.NEXT_PUBLIC_GTM_ID} />
             <Plausible
-              domain={!!process.env.IS_GENERAL ? '2.24.28.238:4007' : 'gitroom.com'}
+              domain={!!process.env.IS_GENERAL ? 'nytfirepublish.com' : 'gitroom.com'}
             >
               <PHProvider
                 phkey={process.env.NEXT_PUBLIC_POSTHOG_KEY}

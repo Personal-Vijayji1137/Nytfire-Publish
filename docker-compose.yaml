@@ -7,9 +7,9 @@ services:
     restart: always
     environment:
       # === Required Settings
-      MAIN_URL: 'http://2.24.28.238:4007'
-      FRONTEND_URL: 'http://2.24.28.238:4007'
-      NEXT_PUBLIC_BACKEND_URL: 'http://2.24.28.238:4007/api'
+      MAIN_URL: 'https://www.nytfirepublish.com'
+      FRONTEND_URL: 'https://www.nytfirepublish.com'
+      NEXT_PUBLIC_BACKEND_URL: 'https://www.nytfirepublish.com/api'
       JWT_SECRET: 'hgdvdhqdqkmjvcagevvdty3fdjgvdgwevfjhegvgqwvfghdvcdgcvnsdvchjgfjgr'
       DATABASE_URL: 'postgresql://postiz-user:postiz-password@postiz-postgres:5432/postiz-db'
       REDIS_URL: 'redis://postiz-redis:6379'
